@@ -1,7 +1,8 @@
 import React from "react";
 import type { PageProps } from "gatsby";
-import Footer from "./footer";
+import Navbar from "./navbar";
 import Sidebar from "./sidebar";
+import Footer from "./footer";
 
 export interface ILayoutProps {
   children: React.ReactNode;
@@ -10,7 +11,7 @@ export interface ILayoutProps {
 const Layout = ({ children }: ILayoutProps) => {
   return (
     <div className="relative min-h-full">
-      <div>Navbar</div>
+      <Navbar />
       <Sidebar />
       <div>{children}</div>
       <Footer />
