@@ -8,7 +8,7 @@
         @apply h-full m-0 p-0 font-montserrat
     }
     body {
-        @apply h-full m-0 p-0 bg-gray-800
+        @apply h-full m-0 p-0 bg-slate-800
     }
     #___gatsby {
         @apply h-full
