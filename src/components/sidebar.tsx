@@ -31,7 +31,7 @@ const Sidebar = () => {
             const { icon, url } = social;
             return (
               <li
-                className="mt-5 transition-all duration-200 ease-out hover:translate-x-1 hover:text-green-500"
+                className="mt-10 transition-all duration-200 ease-out hover:translate-x-1 hover:text-green-500"
                 key={index}
               >
                 <a href={url} target="_blank" rel="noopener noreferrer">
