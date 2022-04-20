@@ -18,6 +18,22 @@ const config: GatsbyConfig = {
   },
   plugins: [
     "gatsby-plugin-postcss",
+    "gatsby-plugin-react-helmet",
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Brady Bassett Portfolio`,
+        short_name: `Brady Bassett`,
+        start_url: `/`,
+        background_color: `#1e293b`,
+        theme_color: `#22c55e`,
+        display: `minimal-ui`,
+        icon: `src/images/logo.png`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
