@@ -8,6 +8,25 @@ import {
   FaFacebook,
 } from "react-icons/fa";
 
+export const navLinks: { id: string; text: string }[] = [
+  {
+    id: "aboutMe",
+    text: "About Me",
+  },
+  {
+    id: "projects",
+    text: "Projects",
+  },
+  {
+    id: "work",
+    text: "Work",
+  },
+  {
+    id: "contactMe",
+    text: "Contact Me",
+  },
+];
+
 export const socialIcons: { icon: JSX.Element; url: string }[] = [
   {
     icon: <FaGithub />,
