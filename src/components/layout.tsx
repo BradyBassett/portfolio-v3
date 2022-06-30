@@ -1,12 +1,8 @@
 import React from "react";
-import type { PageProps } from "gatsby";
 import Navbar from "./navbar";
 import Sidebar from "./sidebar";
 import Footer from "./footer";
-
-export interface ILayoutProps {
-  children: React.ReactNode;
-}
+import { ILayoutProps } from "../common/interfaces";
 
 const Layout = ({ children }: ILayoutProps) => {
   return (

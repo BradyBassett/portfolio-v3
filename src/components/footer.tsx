@@ -1,17 +1,7 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import { socialIcons } from "../utils/data";
-
-export interface IFooterData {
-  site: {
-    siteMetadata: {
-      title: string;
-      socials: {
-        github: string;
-      };
-    };
-  };
-}
+import { socialIcons } from "../common/data";
+import { IFooterData } from "../common/interfaces";
 
 const Footer = () => {
   const data: IFooterData = useStaticQuery(graphql`

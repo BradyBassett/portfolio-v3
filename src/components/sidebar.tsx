@@ -1,14 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
-import { socialIcons } from "../utils/data";
-
-export interface ISidebarData {
-  site: {
-    siteMetadata: {
-      email: string;
-    };
-  };
-}
+import { socialIcons } from "../common/data";
+import { ISidebarData } from "../common/interfaces";
 
 const Sidebar = () => {
   const data: ISidebarData = useStaticQuery(graphql`
